@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--设置顶部菜单下游标 -->
+    <dimen name="top_cursor_height">3dp</dimen>
+
+    <!--设置顶部导航栏 top_navig -->
+    <dimen name="top_navig_height">50dp</dimen>
+    <dimen name="top_navig_img">30dp</dimen>
+
+    <!--设置顶部菜单栏 top_menu -->
+    <dimen name="top_menu_height">35dp</dimen>
+    <!--设置底部菜单栏 buttom_menu -->
+    <dimen name="buttom_menu_height">50dp</dimen>
+
+    <dimen name="space_little">5dp</dimen>
+    <dimen name="space_middle">10dp</dimen>
+    <dimen name="space_middle_add">16dp</dimen>
+    <dimen name="space_height">20dp</dimen>
+    <dimen name="spacing_large">100dp</dimen>
+
+    <!--抽屉宽度-->
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="actionBarSize">56dp</dimen>
+
+    <!--列表项图片高宽-->
+    <dimen name="divider_line_heigh">1dp</dimen>
+    <dimen name="item_img_height">82dp</dimen>
+    <dimen name="item_img_width">100dp</dimen>
+    <dimen name="fab_compat_margin">16dp</dimen>
+
+</resources>

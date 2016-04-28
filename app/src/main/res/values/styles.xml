@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!--顶部菜单栏 字体样式  top_menu -->
+    <style name="top_menu_txtStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DrawerTheme" parent="AppTheme.Base">
+    </style>
+
+    <!--要闻详情页style-->
+    <style name="ImpTheme" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!--Status bar color 状态栏底色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> <!--（色原变暗）：原色的变暗色调，应用在状态栏上-->
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/colorPrimary</item> <!--（原色）：它作为应用的主要色调，一般是操作栏和最近任务的背景色。-->
+        <item name="colorAccent">@color/red</item> <!--（色彩突显）：它是原色的强调色彩，应用在框架控制上。-->
+        <!--SearchView-->
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <!--Window color 主视窗底色 -->
+        <!--<item name="android:windowBackground">@color/colorPrimary</item>-->
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!--
+            Background for the search query section (e.g. EditText)
+            <item name="queryBackground">...</item>
+            Background for the actions section (e.g. voice, submit)
+            <item name="submitBackground">...</item>
+            Close button icon
+            <item name="closeIcon">...</item>
+            Search button icon
+            <item name="searchIcon">...</item>
+            Go/commit button icon
+            <item name="goIcon">...</item>
+            Voice search button icon
+            <item name="voiceIcon">...</item>
+            Commit icon shown in the query suggestion row
+            <item name="commitIcon">...</item>
+            Layout for query suggestion rows
+            <item name="suggestionRowLayout">...</item>
+             -->
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_compat_margin</item>
+        <item name="android:src">@drawable/actionbar_add_icon</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+</resources>

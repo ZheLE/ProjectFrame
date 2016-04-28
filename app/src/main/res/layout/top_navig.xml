@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_navig_height"
+    android:background="@color/top_navig_bg"
+    android:paddingLeft="@dimen/space_middle"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/top_navig_img"
+        android:layout_width="@dimen/top_navig_img"
+        android:layout_height="@dimen/top_navig_img"
+        android:src="@drawable/icon_navig_wo"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

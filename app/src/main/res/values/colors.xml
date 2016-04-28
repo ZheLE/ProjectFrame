@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff009688</color>
+    <color name="colorPrimaryDark">#ff009688</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <drawable name="blue">#80ffff</drawable>
+    <drawable name="gray">#ccc</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+
+    <color name="blue">#536DFE</color>
+    <color name="green">#0f0</color>
+    <color name="gray">#ccc</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#bf360c</color>
+
+    <!-- 顶部导航栏背景色 top_menu——bg-->
+    <color name="top_navig_bg">#536DFE</color>
+
+    <!-- 顶部菜单栏背景色 top_menu——bg-->
+    <color name="top_menu_bg">#21282C</color>
+    <!-- 游标背景色 top_menu-->
+    <color name="top_cursor_bg">#147ABC</color>
+
+    <color name="colorPrimary_200">#ff80cbc4</color>
+    <color name="navigationBarColor">#ff009688</color>
+    <color name="windowBackground">#ffbebebe</color>
+    <color name="fragment_bg">#ff37474f</color>
+
+    <color name="material_deep_teal_500">#ff009688</color>
+
+    <color name="material_blue_grey_800">#ff37474f</color>
+
+
+</resources>

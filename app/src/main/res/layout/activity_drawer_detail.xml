@@ -1,0 +1,118 @@
+<!--
+
+当用户滚动RecyclerView，AppBarLayout可以这样响应滚动事件：
+根据子view的滚动标志（scroll flag）来控制它们如何进入（滚入屏幕）与退出（滚出屏幕）。
+CoordinatorLayout还提供了layout_anchor和layout_anchorGravity属性一起配合使用，可以用于放置floating view，
+fitsSystemWindows="true" 将调整系统窗口布局以适应你自定义的布局
+
+[kəʊ'ɔ:dɪneɪtə]
+-->
+<LinearLayout
+    android:id="@+id/mLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!--使用AppBarLayout可以让你的Toolbar与其他View（比如TabLayout的选项卡）
+        能响应被标记了ScrollingViewBehavior的View的滚动事件-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/mAppBarLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!--可折叠MD风格ToolbarLayout  [kə'læpsiŋ]-->
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/mCollapsingToolbar"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleMarginEnd="64dp">
+
+                <com.project.frame.view.SquareImageView
+                    android:id="@+id/mImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/mToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:layout_collapseMode="pin"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_middle_add"
+                            android:layout_marginRight="@dimen/space_middle_add"
+                            android:layout_marginTop="@dimen/space_middle_add"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space_middle_add"
+                            android:text="@string/lorem_ipsum"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </FrameLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mFloatButton"
+            app:layout_anchor="@id/mAppBarLayout"
+            app:layout_anchorGravity="bottom|right|end"
+            style="@style/FabStyle"></android.support.design.widget.FloatingActionButton>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
+

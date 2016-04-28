@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--我们定义了字体，字体颜色，字体大小3个属性，format是值该属性的取值类型:-->
+    <attr name="titleText" format="string"/>
+    <!--<attr name="titleTextColor" format="color" />-->
+    <attr name="titleTextSize" format="dimension" />
+
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText"/>
+        <!--<attr name="titleTextColor" />-->
+        <attr name="titleTextSize" />
+    </declare-styleable>
+
+</resources>
